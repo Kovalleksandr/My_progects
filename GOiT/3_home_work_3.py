@@ -20,7 +20,8 @@ def normalize_phone(phone_number):
     if len(cleaned_number) in [9, 10]:
         return f"+38{cleaned_number}"
 
-    # В іншому випадку повертаємо як є
+    
+    
     return cleaned_number
 
 # Приклад
@@ -33,8 +34,9 @@ raw_numbers = [
     "     0503451234",
     "(050)8889900",
     "38050-111-22-22",
-    "38050 111 22 11   ",
+    "38050 111 22 12   ",
 ]
+
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
 print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
