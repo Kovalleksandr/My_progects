@@ -21,7 +21,6 @@ def normalize_phone(phone_number):
         return f"+38{cleaned_number}"
 
     
-    
     return cleaned_number
 
 # Приклад
